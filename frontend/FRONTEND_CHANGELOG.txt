@@ -1,0 +1,18 @@
+SplitBrain frontend v3
+
+Implemented:
+- Auth layout: registration/login share one centered geometry; title image remains above the card.
+- Auth tab switching: animated underline + form/title transitions; email/password clear on mode switch.
+- Workspace shell: full viewport app shell; sidebar, header and composer stay fixed; only chat area scrolls.
+- Sidebar: text wordmark, resizable width (220–420px), persistent width, single-line session titles with ellipsis.
+- Composer: compact one-line default, auto-expanding textarea, no fake attachment control.
+- Landing: vertical scroll retained and extended with additional product/feature sections and restrained reveal animation.
+- Branding: supplied SB monogram installed as favicon source; browser title set to SplitBrain; 64px/32px/apple-touch PNGs generated.
+
+No backend files were changed.
+node_modules is intentionally excluded; run `npm ci` inside frontend before `npm run dev`.
+
+Auth layout follow-up:
+- Auth pages use a strict viewport-height layout with page scrolling disabled.
+- Registration/login title and auth card are pulled upward and kept closer together.
+- Registration/login use the same centered geometry.
